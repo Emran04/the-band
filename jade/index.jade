@@ -1,0 +1,398 @@
+doctype
+html.no-js
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title The Band
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700|Oswald:400,300,700')
+    link(rel='stylesheet', href='lib/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='lib/fullpage.js/jquery.fullPage.css')
+    link(rel='stylesheet', href='lib/owl-carousel/owl.carousel.css')
+    link(rel='stylesheet', href='lib/owl-carousel/owl.theme.default.css')
+    link(rel='stylesheet', href='css/main.css')
+    script(src='lib/modernizer/modernizr.js')
+  body
+    #fullpage
+      header.header-area.section
+        nav.navbar.menu-area
+          .container
+            .navbar-header
+              button.navbar-toggle.collapsed(data-toggle="collapse", data-target="#bs-example-navbar-collapse-1", aria-expanded="false")
+                span.sr-only Menu
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            .collapse.navbar-collapse#bs-example-navbar-collapse-1
+              ul.menu__inner#menu
+                li(data-menuanchor="home")
+                  a(href="#home") Home
+                li(data-menuanchor="about")
+                  a(href="#about") About
+                li(data-menuanchor="music")
+                  a(href="#music") Music
+                li(data-menuanchor="tour")
+                  a(href="#tour") Tours
+                li(data-menuanchor="contact")
+                  a(href="#contact") Contact
+            .we-band-box
+              .we-band-box-inner
+                .we-band-box-content
+                  h1 We are
+                  h1.second-hd The band
+      .section.meet-our-band-area
+        #carousel-example-generic.carousel.slide
+          ol.carousel-indicators.carousel-nav.hidden-xs.hidden-sm
+            li.active(data-target="#carousel-example-generic", data-slide-to="0") curt sheard 
+              span
+              |  bass
+            li(data-target="#carousel-example-generic", data-slide-to="1") Tommie Brendan 
+              span
+              |  electronics
+            li(data-target="#carousel-example-generic", data-slide-to="2") Charles Timmy 
+              span
+              |  guitar
+          .carousel-inner
+            .artist1.item.active
+              .container
+                .row
+                  .col-sm-6
+                    .artist-hd-box
+                      .artist-hd
+                        h1 Curt
+                        h1.sec Sheard
+                  .col-sm-6
+                    .band-info-box
+                      .band-info
+                        h2 Meet our band
+                        p Court Sheard, swag iPhone neutra williamsburg, sriracha you probably haven't heard of them PBR&B marfa seitan. Four dollar toast wayfarers helvetica etsy, affogato pinterest schlitz. Squid yr mlkshk, pinterest pour-over polaroid photo booth. Yr fixie plaid kogi.
+            .artist1.item
+              .container
+                .row
+                  .col-sm-6
+                    .artist-hd-box
+                      .artist-hd
+                        h1 Emran
+                        h1.sec Hossen
+                  .col-sm-6
+                    .band-info-box
+                      .band-info
+                        h2 Meet our band
+                        p Court Sheard, swag iPhone neutra williamsburg, sriracha you probably haven't heard of them PBR&B marfa seitan. Four dollar toast wayfarers helvetica etsy, affogato pinterest schlitz. Squid yr mlkshk, pinterest pour-over polaroid photo booth. Yr fixie plaid kogi.
+            .artist1.item
+              .container
+                .row
+                  .col-sm-6
+                    .artist-hd-box
+                      .artist-hd
+                        h1 Bipol
+                        h1.sec Hasan
+                  .col-sm-6
+                    .band-info-box
+                      .band-info
+                        h2 Meet our band
+                        p Court Sheard, swag iPhone neutra williamsburg, sriracha you probably haven't heard of them PBR&B marfa seitan. Four dollar toast wayfarers helvetica etsy, affogato pinterest schlitz. Squid yr mlkshk, pinterest pour-over polaroid photo booth. Yr fixie plaid kogi.
+          a.left.carousel-control(href="#carousel-example-generic", data-slide="prev")
+          a.right.carousel-control(href="#carousel-example-generic", data-slide="next")
+      .section.music-area
+        .container
+          .row
+            .col-sm-6
+              .album-box
+                .album-photo
+                  img(src="img/album-cover.png", alt="Album Cover")
+                .album-store
+                  h3 Discography
+                  ul.album-list.clearfix
+                    li
+                      .album-single
+                        .album-hd
+                          a(href="#") Surprise Without Flaws
+                        span
+                        .year
+                          a(href="#") 2016
+                        .listen
+                          a(href="#") Listen
+                        .buy
+                          a(href="#") Buy
+                    li
+                      .album-single
+                        .album-hd
+                          a(href="#") Mists Of A Shadow
+                        span
+                        .year
+                          a(href="#") 2015
+                        .listen
+                          a(href="#") Listen
+                        .buy
+                          a(href="#") Buy
+                    li
+                      .album-single
+                        .album-hd
+                          a(href="#") Heroes Of The Sun
+                        span
+                        .year
+                          a(href="#") 2014
+                        .listen
+                          a(href="#") Listen
+                        .buy
+                          a(href="#") Buy
+            .col-sm-6
+              .now-playing
+                h3 Now playing
+                h4.song-hd Surprise Without Flaws
+                p 01. Clouds In The Forest
+                .player
+                  img(src="img/player.jpg", alt="player")
+              .song-list
+                h4.song-hd Surprise Without Flaws
+                ul.songs.clearfix
+                  li
+                    .song-single
+                      .song-title
+                        a(href="#") 01. Clouds In The Forest
+                      .song-dotts
+                        p .................
+                      .song-duration
+                        p 3.20
+                  li
+                    .song-single
+                      .song-title
+                        a(href="#") 02. Rat In The River
+                      .song-dotts
+                        p .................
+                      .song-duration
+                        p 2.48
+                  li
+                    .song-single
+                      .song-title
+                        a(href="#") 03. Giants And Companions
+                      .song-dotts
+                        p .................
+                      .song-duration
+                        p 4.20
+                  li
+                    .song-single
+                      .song-title
+                        a(href="#") 04. Ashamed Of Light
+                      .song-dotts
+                        p .................
+                      .song-duration
+                        p 5.30
+                  li
+                    .song-single
+                      .song-title
+                        a(href="#") 05. Doubting The Forest
+                      .song-dotts
+                        p .................
+                      .song-duration
+                        p 2.40
+                  li
+                    .song-single
+                      .song-title
+                        a(href="#") 06. Criminals Of The Lake
+                      .song-dotts
+                        p .................
+                      .song-duration
+                        p 2.55
+                  li
+                    .song-single
+                      .song-title
+                        a(href="#") 07. Curse Of Eternity
+                      .song-dotts
+                        p .................
+                      .song-duration
+                        p 1.45
+                  li
+                    .song-single
+                      .song-title
+                        a(href="#") 08. Fog In My Town
+                      .song-dotts
+                        p .................
+                      .song-duration
+                        p 3.50
+      .section.tour-area
+        .container
+          .tour-hd
+            h2 Tour Dates
+          .tour-dates-box
+            .tour-carousel
+              .single-slides
+                ul.single-tour-box
+                  li
+                    a(href="#")
+                      p TAP 1, today
+                      p COPENHAGEN, DENMARK
+                  li
+                    a(href="#")
+                      p COLUMBIANHALLE, 16/12/2015
+                      p BERLIN, GERMANY
+                  li
+                    a(href="#")
+                      p Torwar, 19/12/2015
+                      p WARSAW, POLAND
+                  li
+                    a(href="#")
+                      p MEDIOLANUM FORUM, 16/01/2016
+                      p MILAN, ITALY
+                  li
+                    a(href="#")
+                      p ZENITH, 23/02/2016
+                      p PARIS, FRANCE
+                  li
+                    a(href="#")
+                      p ALEXANDRA PALACE, 14/03/2016
+                      p LONDON, UK
+              .single-slides
+                ul.single-tour-box
+                  li
+                    a(href="#")
+                      p TAP 1, today
+                      p COPENHAGEN, DENMARK
+                  li
+                    a(href="#")
+                      p COLUMBIANHALLE, 16/12/2015
+                      p BERLIN, GERMANY
+                  li
+                    a(href="#")
+                      p Torwar, 19/12/2015
+                      p WARSAW, POLAND
+                  li
+                    a(href="#")
+                      p MEDIOLANUM FORUM, 16/01/2016
+                      p MILAN, ITALY
+                  li
+                    a(href="#")
+                      p ZENITH, 23/02/2016
+                      p PARIS, FRANCE
+                  li
+                    a(href="#")
+                      p ALEXANDRA PALACE, 14/03/2016
+                      p LONDON, UK
+              .single-slides
+                ul.single-tour-box
+                  li
+                    a(href="#")
+                      p TAP 1, today
+                      p COPENHAGEN, DENMARK
+                  li
+                    a(href="#")
+                      p COLUMBIANHALLE, 16/12/2015
+                      p BERLIN, GERMANY
+                  li
+                    a(href="#")
+                      p Torwar, 19/12/2015
+                      p WARSAW, POLAND
+                  li
+                    a(href="#")
+                      p MEDIOLANUM FORUM, 16/01/2016
+                      p MILAN, ITALY
+                  li
+                    a(href="#")
+                      p ZENITH, 23/02/2016
+                      p PARIS, FRANCE
+                  li
+                    a(href="#")
+                      p ALEXANDRA PALACE, 14/03/2016
+                      p LONDON, UK
+            .tour-add
+              button.add-tour(type="button", data-toggle="modal", data-target="#myModal") +
+          .modal.fade#myModal(tabindex="-1", role="dialog", aria-labelledby="myModalLabel")
+            .modal-dialog(role="document")
+              .modal-content
+                .modal-header
+                  button.close(type="button", data-dismiss="modal")
+                    span(aria-hidden="true") &times;
+                .modal-footer
+                  button.btn.btn-primary(type="button") Save
+          .tour-tickets
+            .tour-ticket-single
+              .tour-date
+                .day
+                  span 12
+                .month-year
+                  span.month Jan
+                  span.year 2016
+              span.date-border
+              .tour-location Tap // Copenhagen, Denmark
+              .buy-ticket-btn
+                a(href="#") Buy ticket
+            .tour-ticket-single
+              .tour-date
+                .day
+                  span 14
+                .month-year
+                  span.month Feb
+                  span.year 2016
+              span.date-border
+              .tour-location Columbianhalle   //  Berlin, Germany
+              .buy-ticket-btn
+                a(href="#") Buy ticket
+            .tour-ticket-single
+              .tour-date
+                .day
+                  span 16
+                .month-year
+                  span.month Feb
+                  span.year 2016
+              span.date-border
+              .tour-location Torwar   //  Warsaw, Poland
+              .buy-ticket-btn
+                a(href="#") Buy ticket
+            .tour-ticket-single
+              .tour-date
+                .day
+                  span 16
+                .month-year
+                  span.month Feb
+                  span.year 2016
+              span.date-border
+              .tour-location Torwar   //  Warsaw, Poland
+              .buy-ticket-btn
+                a(href="#") Buy ticket
+      .section.contact-area
+        .container
+          .contact-box
+            .contact-hd
+              h1 Contact
+              h1.sub +48 202 - 555 - 0114
+            .contact-subscribe-box
+              .contact-subscribe
+                .sbscribe-form
+                  form(action="")
+                    .subscribe-box
+                      .subscribe-btn
+                        input(type="submit", value="Subscribe")
+                      .subscribe-mail
+                        input(type="email", id="email")
+                .contact-social
+                  ul
+                    li
+                      a.facebook(href="#")
+                    li
+                      a.youtube(href="#")
+        .footer-area
+          .container
+            .row
+              .col-sm-6
+                p.f-info Copyright 2015 © by The Band
+              .col-sm-6
+                .footer-menu
+                  ul
+                    li
+                      a(href="#") Home
+                    li
+                      a(href="#") About
+                    li
+                      a(href="#") Music
+                    li
+                      a(href="#") Tours
+                    li
+                      a(href="#") Contact
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script window.jQuery || document.write('<script src="lib/jquery/dist/jquery.min.js"><\/script>')
+    script(src='lib/bootstrap/dist/js/bootstrap.min.js')
+    script(src='lib/fullpage.js/jquery.fullPage.min.js')
+    script(src='lib/owl-carousel/owl.carousel.js')
+    script(src='js/main.js')

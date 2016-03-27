@@ -1,0 +1,671 @@
+img {
+  max-width: 100%; }
+
+body {
+  background-color: #FFF;
+  font-family: "Lora", serif; }
+
+/* Base styles */
+h3 {
+  font-size: 28px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #241c18; }
+
+#fp-nav ul li .fp-tooltip {
+  color: #241c18; }
+
+#fp-nav span, .fp-slidesNav span {
+  border-color: #AAA; }
+
+#fp-nav li .active span, .fp-slidesNav .active span {
+  background: #AAA; }
+
+.header-area {
+  background: url(../img/header-bg.jpg) 0 0 no-repeat;
+  background-size: cover; }
+  @media only screen and (max-width: 768px) {
+    .header-area {
+      min-height: 460px;
+      background: #8F7B72;
+      padding-bottom: 30px; }
+      .header-area .navbar-toggle .icon-bar {
+        background: #fff; } }
+
+.menu__inner {
+  list-style: none;
+  margin-top: 65px; }
+  @media only screen and (max-width: 768px) {
+    .menu__inner {
+      text-align: center; } }
+  .menu__inner li {
+    float: left; }
+    @media only screen and (max-width: 768px) {
+      .menu__inner li {
+        float: none;
+        margin-bottom: 15px; } }
+    .menu__inner li a {
+      font-size: 18px;
+      font-weight: 700;
+      color: #241c18;
+      text-decoration: none;
+      padding: 10px 15px;
+      text-transform: uppercase; }
+      .menu__inner li a:first-child {
+        padding-left: 0; }
+
+.we-band-box {
+  position: relative; }
+  .we-band-box .we-band-box-inner {
+    position: absolute;
+    height: 549px;
+    width: 377px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/bg-words.png) 0 0 no-repeat; }
+    @media only screen and (max-width: 768px) {
+      .we-band-box .we-band-box-inner {
+        position: initial;
+        width: 100%; } }
+    .we-band-box .we-band-box-inner .we-band-box-content {
+      margin-top: 40%; }
+      @media only screen and (max-width: 768px) {
+        .we-band-box .we-band-box-inner .we-band-box-content {
+          padding-top: 40%;
+          margin-top: 0; } }
+      .we-band-box .we-band-box-inner .we-band-box-content h1 {
+        text-align: center;
+        font-size: 80px;
+        color: #e4dddb;
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase; }
+        @media only screen and (max-width: 768px) {
+          .we-band-box .we-band-box-inner .we-band-box-content h1 {
+            font-size: 70px; } }
+      .we-band-box .we-band-box-inner .we-band-box-content .second-hd {
+        color: #241c18; }
+
+/* We are a band area styles */
+.meet-our-band-area {
+  background-color: #F3EFEE; }
+  @media only screen and (max-width: 768px) {
+    .meet-our-band-area {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+
+.artist1 {
+  background-color: #F3EFEE;
+  background-image: url(../img/artist-m.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  min-height: 100vh; }
+  @media only screen and (max-width: 768px) {
+    .artist1 {
+      background: none;
+      min-height: initial; } }
+
+.carousel-inner {
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden; }
+
+.artist-hd-box {
+  position: relative; }
+  .artist-hd-box .artist-hd {
+    position: absolute;
+    left: 60%;
+    margin-top: 70%; }
+    .artist-hd-box .artist-hd h1 {
+      font-family: "Oswald", sans-serif;
+      font-size: 78px;
+      font-weight: 700;
+      color: #826b60;
+      text-transform: uppercase;
+      text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .artist-hd-box .artist-hd {
+        position: initial;
+        margin-top: 0; }
+        .artist-hd-box .artist-hd h1 {
+          font-size: 55px; } }
+    .artist-hd-box .artist-hd .sec {
+      color: #241c18; }
+
+.band-info-box {
+  position: relative; }
+  .band-info-box .band-info {
+    margin-left: 10%;
+    margin-top: 65%;
+    padding: 10px 40px; }
+    @media only screen and (max-width: 768px) {
+      .band-info-box .band-info {
+        margin-top: 5%;
+        margin-left: 0; } }
+    .band-info-box .band-info h2 {
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      color: #241c18;
+      font-size: 28px;
+      margin-bottom: 45px; }
+    .band-info-box .band-info p {
+      color: #241c18; }
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  height: 71px;
+  width: 40px; }
+
+a.left.carousel-control {
+  background: url(../img/left-arrow.png) 0 0 no-repeat;
+  left: 5%; }
+  @media only screen and (max-width: 768px) {
+    a.left.carousel-control {
+      background-size: 28px 50px;
+      left: 3%; } }
+
+a.right.carousel-control {
+  background: url(../img/right-arrow.png) 0 0 no-repeat;
+  right: 5%; }
+  @media only screen and (max-width: 768px) {
+    a.right.carousel-control {
+      background-size: 28px 50px;
+      right: 3%; } }
+
+.carousel-nav {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  left: initial;
+  bottom: initial;
+  width: 20%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+  .carousel-nav li {
+    color: #241c18;
+    display: block;
+    float: left;
+    text-indent: initial;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    color: #e4dddb;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    border: none; }
+    .carousel-nav li.active, .carousel-nav li:hover {
+      width: 100%;
+      height: 30px;
+      color: #826b60;
+      margin-top: 10px;
+      background-color: initial; }
+      .carousel-nav li.active span, .carousel-nav li:hover span {
+        background-color: #826b60; }
+    .carousel-nav li span {
+      display: inline-block;
+      margin: 0 8px;
+      width: 8px;
+      height: 8px;
+      background-color: #e4dddb;
+      border-radius: 15px; }
+
+/* Album store styles */
+@media only screen and (max-width: 768px) {
+  .music-area {
+    padding-bottom: 30px; } }
+
+.album-box {
+  padding-top: 40px; }
+
+.album-photo {
+  padding: 5%; }
+
+.album-store h3 {
+  margin-bottom: 30px; }
+
+ul.album-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.album-single {
+  float: left;
+  width: 100%;
+  margin-bottom: 25px; }
+  .album-single div {
+    float: left; }
+    .album-single div a {
+      font-family: "Oswald", sans-serif;
+      font-weight: 300;
+      color: #241c18;
+      text-decoration: none;
+      font-size: 23px; }
+      @media only screen and (max-width: 768px) {
+        .album-single div a {
+          font-size: 16px; } }
+  .album-single span {
+    display: block;
+    float: left;
+    height: 10px;
+    width: 10px;
+    background-color: #e4dddb;
+    border-radius: 10px;
+    margin-top: 10px; }
+  .album-single .album-hd {
+    width: 50%; }
+  .album-single .year {
+    width: 10%;
+    margin: 0 15px; }
+  .album-single .listen {
+    width: 15%; }
+    .album-single .listen a {
+      display: inline-block;
+      font-weight: 400;
+      font-size: 14px;
+      color: #826b60;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      background-color: #e4dddb; }
+      @media only screen and (max-width: 768px) {
+        .album-single .listen a {
+          font-size: 12px; } }
+  .album-single .buy {
+    width: 15%; }
+    .album-single .buy a {
+      display: inline-block;
+      font-weight: 400;
+      font-size: 14px;
+      text-transform: uppercase;
+      padding: 5px 13px;
+      color: #f8f8f8;
+      background-color: #826b60; }
+      @media only screen and (max-width: 768px) {
+        .album-single .buy a {
+          font-size: 12px; } }
+
+.now-playing {
+  padding-top: 70px; }
+  .now-playing h3 {
+    margin-bottom: 25px; }
+  .now-playing p {
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #826b60; }
+  .now-playing .player {
+    margin-top: 15px;
+    margin-bottom: 50px; }
+
+.song-hd {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  color: #241c18; }
+
+ul.songs {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+  float: left;
+  width: 100%; }
+  ul.songs li {
+    width: 100%;
+    float: left; }
+
+.song-single {
+  width: 100%;
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #826b60;
+  float: left; }
+  .song-single div {
+    float: left; }
+  .song-single .song-title {
+    width: 50%; }
+    .song-single .song-title a {
+      font-family: "Lora", serif;
+      font-style: italic;
+      font-size: 14px;
+      color: #826b60; }
+  .song-single .song-dotts {
+    width: 23%;
+    letter-spacing: 3px; }
+  .song-single .song-duration {
+    width: 15%;
+    margin-left: 5px; }
+
+/* Tour section styles */
+.tour-area {
+  padding-top: 40px;
+  background-color: #f1eeed; }
+
+.tour-hd {
+  text-align: center;
+  margin-bottom: 40px; }
+  .tour-hd h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #241c18; }
+
+.tour-dates-box {
+  width: 67%;
+  margin: 0 auto;
+  position: relative; }
+  .tour-dates-box::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #e4dddb;
+    left: 0;
+    top: 5.5%; }
+
+.owl-stage-outer {
+  overflow: hidden; }
+
+.single-slides {
+  width: 320px; }
+
+.owl-item {
+  height: 320px; }
+
+.single-slides, .owl-item {
+  display: inline-block; }
+
+.single-tour-box {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 300px; }
+  .single-tour-box li {
+    position: relative;
+    width: 80%;
+    text-align: right;
+    margin-bottom: 15px; }
+    .single-tour-box li::before {
+      position: absolute;
+      content: "";
+      height: 10px;
+      width: 10px;
+      border-radius: 10px;
+      right: -16%;
+      top: 10px;
+      background-color: #826b60; }
+    .single-tour-box li a {
+      font-family: "Lora", serif;
+      font-weight: 700;
+      font-size: 12px;
+      color: #241c18;
+      text-transform: uppercase; }
+      .single-tour-box li a p {
+        margin-bottom: 0; }
+
+.owl-next, .owl-prev {
+  position: absolute;
+  top: 40%;
+  cursor: pointer; }
+
+.owl-prev {
+  left: -5%; }
+  @media only screen and (max-width: 768px) {
+    .owl-prev {
+      left: -10%; } }
+
+.owl-next {
+  right: -5%; }
+  @media only screen and (max-width: 768px) {
+    .owl-next {
+      right: -10%; } }
+
+.tour-add {
+  position: absolute;
+  top: -1.5%;
+  right: -3%; }
+
+.add-tour {
+  font-size: 30px;
+  font-weight: 700;
+  color: #958279;
+  border: none;
+  background: initial;
+  outline: none; }
+
+.owl-item .single-tour-box li a {
+  color: #e4dddb; }
+
+.owl-item .single-tour-box li::before {
+  background-color: #e4dddb; }
+
+.owl-item.active .single-tour-box li a {
+  color: #241c18; }
+
+.owl-item.active .single-tour-box li::before {
+  background-color: #826b60; }
+
+/* Tickets styles */
+.tour-tickets {
+  max-height: 180px;
+  overflow: auto;
+  width: 65%;
+  margin: 0 auto;
+  padding: 0 3%;
+  margin-bottom: 50px; }
+  @media only screen and (max-width: 768px) {
+    .tour-tickets {
+      width: 100%; } }
+
+.tour-date,
+.tour-location,
+.date-border {
+  display: block;
+  float: left; }
+
+.buy-ticket-btn {
+  float: right; }
+
+.tour-ticket-single {
+  width: 100%;
+  float: left;
+  border-bottom: 1px dotted;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .tour-ticket-single .tour-date {
+    width: 15%;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    color: #241c18;
+    line-height: 1.2; }
+    .tour-ticket-single .tour-date .day {
+      float: left;
+      width: 45%;
+      font-size: 39px;
+      margin-right: 8%; }
+      @media only screen and (max-width: 768px) {
+        .tour-ticket-single .tour-date .day {
+          font-size: 25px; } }
+    .tour-ticket-single .tour-date .month-year {
+      float: left;
+      width: 45%;
+      font-size: 18px; }
+      .tour-ticket-single .tour-date .month-year span {
+        display: block; }
+  .tour-ticket-single .date-border {
+    display: block;
+    height: 25px;
+    width: 3px;
+    background-color: #e4dddb;
+    margin: 5px 10px; }
+  .tour-ticket-single .tour-location {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: #241c18; }
+    @media only screen and (max-width: 768px) {
+      .tour-ticket-single .tour-location {
+        font-size: 16px; } }
+  .tour-ticket-single .buy-ticket-btn {
+    margin-right: 3%; }
+    .tour-ticket-single .buy-ticket-btn a {
+      display: block;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      color: #f8f8f8;
+      text-transform: uppercase;
+      padding: 5px 20px;
+      background-color: #826b60; }
+      @media only screen and (max-width: 768px) {
+        .tour-ticket-single .buy-ticket-btn a {
+          font-size: 12px; } }
+
+/* Contact area styles */
+.contact-area {
+  background: url(../img/contact-bg.jpg) 0 0 no-repeat;
+  background-size: cover; }
+
+.contact-box {
+  width: 60%;
+  margin: 0 auto; }
+  @media only screen and (max-width: 768px) {
+    .contact-box {
+      width: 100%; } }
+  .contact-box .contact-hd {
+    text-align: center;
+    padding-top: 50px;
+    border-bottom: 2px dotted #e4dddb; }
+    .contact-box .contact-hd h1 {
+      font-family: "Oswald", sans-serif;
+      font-weight: 700;
+      font-size: 4.28em;
+      color: #241c18;
+      text-transform: uppercase; }
+      @media only screen and (max-width: 768px) {
+        .contact-box .contact-hd h1 {
+          font-size: 3.5em; } }
+    .contact-box .contact-hd .sub {
+      font-size: 3.5em;
+      color: #e4dddb; }
+      @media only screen and (max-width: 768px) {
+        .contact-box .contact-hd .sub {
+          font-size: 2.5em; } }
+
+.contact-subscribe-box {
+  text-align: center; }
+
+.contact-subscribe {
+  padding-bottom: 40px;
+  margin: 30px auto;
+  display: inline-block;
+  text-align: initial; }
+
+.sbscribe-form {
+  float: left; }
+
+.subscribe-box {
+  border: 5px solid #241c18;
+  float: left;
+  min-width: 400px; }
+  .subscribe-box .subscribe-btn {
+    width: 35%;
+    float: left; }
+    .subscribe-box .subscribe-btn input {
+      border: none;
+      background-color: #241c18;
+      font-family: "Oswald", sans-serif;
+      font-weight: 700;
+      font-size: 2em;
+      color: #e4dddb;
+      text-transform: uppercase; }
+      @media only screen and (max-width: 768px) {
+        .subscribe-box .subscribe-btn input {
+          font-size: 1.75em;
+          line-height: 1.6; } }
+  .subscribe-box .subscribe-mail {
+    width: 63%;
+    float: left; }
+    .subscribe-box .subscribe-mail input {
+      border: none;
+      width: 100%;
+      height: 40px;
+      background-color: #907b71;
+      font-family: "Oswald", sans-serif;
+      font-weight: 700;
+      font-size: 2em;
+      color: #e4dddb; }
+      .subscribe-box .subscribe-mail input:focus {
+        outline: none; }
+
+.contact-social {
+  float: left; }
+  .contact-social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .contact-social ul li {
+      float: left;
+      margin-left: 20px; }
+      .contact-social ul li a {
+        display: block;
+        height: 47px;
+        width: 27px; }
+      .contact-social ul li .facebook {
+        background: url(../img/f-icon.png) 0 0 no-repeat; }
+      .contact-social ul li .youtube {
+        width: 49px;
+        height: 47px;
+        background: url(../img/y-icon.png) 0 0 no-repeat; }
+  @media only screen and (max-width: 768px) {
+    .contact-social {
+      text-align: center;
+      width: 100%;
+      margin-top: 30px; }
+      .contact-social ul {
+        display: inline-block; } }
+
+.footer-area {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+  @media only screen and (max-width: 480px) {
+    .footer-area {
+      position: initial; } }
+
+.f-info {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 1em;
+  color: #e4dddb;
+  text-transform: uppercase; }
+  @media only screen and (max-width: 768px) {
+    .f-info {
+      text-align: center; } }
+
+.footer-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block; }
+  .footer-menu ul li {
+    float: left; }
+    .footer-menu ul li a {
+      font-family: "Lora", serif;
+      font-weight: 700;
+      font-size: 1em;
+      color: #e4dddb;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 10px 15px; }
+
+/*# sourceMappingURL=main.css.map */

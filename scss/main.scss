@@ -1,0 +1,823 @@
+@import 'mixins';
+// Variables
+$font-lora: 'Lora', serif;
+$font-oswald: 'Oswald', sans-serif;
+
+img {
+	max-width: 100%;
+}
+
+
+body {
+	background-color: #FFF;
+	font-family: $font-lora;
+}
+
+/* Base styles */
+h3 {
+	font-size: 28px;
+	font-family: $font-oswald;
+	font-weight: 400;
+	color: #241c18;
+}
+
+	#fp-nav ul li .fp-tooltip {
+		color: #241c18;
+	}
+	#fp-nav span, .fp-slidesNav span{
+		border-color: #AAA;
+	}
+	#fp-nav li .active span, .fp-slidesNav .active span{
+		background: #AAA;
+	}
+
+.header-area {
+	background: url(../img/header-bg.jpg) 0 0 no-repeat;
+	background-size: cover;
+	@include MQ(M) {
+		min-height: 460px;
+		background: #8F7B72;
+		padding-bottom: 30px;
+		.navbar-toggle .icon-bar {
+	    background: #fff;
+		}
+	}
+}
+
+.menu__inner {
+	list-style: none;
+	margin-top: 65px;
+	@include MQ(M) {
+		text-align: center;
+	}
+	li {
+		float: left;
+		@include MQ(M) {
+			float: none;
+			margin-bottom: 15px;
+		}
+		a {
+			font-size: 18px;
+			font-weight: 700;
+			color: #241c18;
+			text-decoration: none;
+			padding: 10px 15px;
+			text-transform: uppercase;
+			&:first-child {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+.we-band-box {
+	position: relative;
+	.we-band-box-inner {
+		position: absolute;
+		height: 549px;
+		width: 377px;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background: url(../img/bg-words.png) 0 0 no-repeat;
+		@include MQ(M) {
+			position: initial;
+			width: 100%;
+		}
+		.we-band-box-content {
+			margin-top: 40%;
+			@include MQ(M) {
+				padding-top: 40%;
+				margin-top: 0;
+			}
+			h1 {
+				text-align: center;
+				font-size: 80px;
+				color: #e4dddb;
+				font-family: $font-oswald;
+				font-weight: 700;
+				text-transform: uppercase;
+				@include MQ(M) {
+					font-size: 70px;
+				}
+			}
+			.second-hd {
+				color: #241c18;
+			}
+		}
+	}
+}
+
+
+/* We are a band area styles */
+.meet-our-band-area {
+	background-color: #F3EFEE;
+	@include MQ(M) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+.artist1 {
+	background-color: #F3EFEE;
+	background-image: url(../img/artist-m.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	height: 100%;
+	background-size: cover;
+	min-height: 100vh;
+	@include MQ(M) {
+		background: none;
+		min-height: initial;
+	}
+}
+.carousel-inner {
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+.artist-hd-box {
+	position: relative;
+	.artist-hd {
+		position: absolute;
+		left: 60%;
+		margin-top: 70%;
+		h1 {
+			font-family: $font-oswald;
+			font-size: 78px;
+			font-weight: 700;
+			color: #826b60;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		@include MQ(M) {
+			position: initial;
+			margin-top: 0;
+			h1 {
+				font-size: 55px;
+			}
+		}
+		.sec {
+			color: #241c18;
+		}
+	}
+}
+
+
+.band-info-box {
+	position: relative;
+	.band-info {
+		margin-left: 10%;
+		margin-top: 65%;
+		padding: 10px 40px;
+		@include MQ(M) {
+			margin-top: 5%;
+			margin-left: 0;
+		}
+		h2 {
+			text-align: center;
+			font-family: $font-oswald;
+			font-weight: 400;
+			color: #241c18;
+			font-size: 28px;
+			margin-bottom: 45px;
+		}
+		p {
+			color: #241c18;
+		}
+	}
+}
+
+.carousel-control {
+	position: absolute;
+	top: 50%;
+	height: 71px;
+	width: 40px;
+}
+
+a.left.carousel-control {
+	background: url(../img/left-arrow.png) 0 0 no-repeat;
+	left: 5%;
+	@include MQ(M) {
+		background-size: 28px 50px;
+		left: 3%;
+	}
+}
+
+a.right.carousel-control {
+	background: url(../img/right-arrow.png) 0 0 no-repeat;
+	right: 5%;
+	@include MQ(M) {
+		background-size: 28px 50px;
+		right: 3%;
+	}
+}
+
+
+.carousel-nav {
+	position: absolute;
+	top: 20%;
+	right: 20%;
+	left: initial;
+	bottom: initial;
+	width: 20%;
+	transform: rotate(-90deg);
+	li {
+		color: #241c18;
+		display: block;
+		float: left;
+		text-indent: initial;
+		width: 100%;
+		height: 30px;
+		line-height: 30px;
+		margin-top: 10px;
+		color: #e4dddb;
+		font-weight: 700;
+		font-size: 10px;
+		text-transform: uppercase;
+		border: none;
+		&.active, &:hover {
+			width: 100%;
+			height: 30px;
+			color: #826b60;
+			margin-top: 10px;
+			background-color: initial;
+			span {
+				background-color: #826b60;
+			}
+		}
+		span {
+			display: inline-block;
+			margin: 0 8px;
+			width: 8px;
+			height: 8px;
+			background-color: #e4dddb;
+			border-radius: 15px;
+		}
+	}
+}
+
+/* Album store styles */
+.music-area {
+	@include MQ(M) {
+		padding-bottom: 30px;
+	}
+}
+.album-box {
+	padding-top: 40px;
+}
+
+.album-photo {
+	padding: 5%;
+}
+
+.album-store {
+	h3 {
+		margin-bottom: 30px;
+	}
+}
+
+ul.album-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.album-single {
+	float: left;
+	width: 100%;
+	margin-bottom: 25px;
+	div {
+		float: left;
+		a {
+			font-family: $font-oswald;
+			font-weight: 300;
+			color: #241c18;
+			text-decoration: none;
+			font-size: 23px;
+			@include MQ(M) {
+				font-size: 16px;
+			}
+		}
+	}
+	span {
+		display: block;
+		float: left;
+		height: 10px;
+		width: 10px;
+		background-color: #e4dddb;
+		border-radius: 10px;
+		margin-top: 10px;
+	}
+	.album-hd {
+		width: 50%;
+	}
+	.year {
+		width: 10%;
+		margin: 0 15px;
+	}
+	.listen {
+		width: 15%;
+		a {
+			display: inline-block;
+			font-weight: 400;
+			font-size: 14px;
+			color: #826b60;
+			text-transform: uppercase;
+			padding: 5px 10px;
+			background-color: #e4dddb;
+			@include MQ(M) {
+				font-size: 12px;
+			}
+		}
+	}
+	.buy {
+		width: 15%;
+		a {
+			display: inline-block;
+			font-weight: 400;
+			font-size: 14px;
+			text-transform: uppercase;
+			padding: 5px 13px;
+			color: #f8f8f8;
+			background-color: #826b60;
+			@include MQ(M) {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+
+
+.now-playing {
+	padding-top: 70px;
+	h3 {
+		margin-bottom: 25px;
+	}
+	p {
+		font-family: $font-lora;
+		font-style: italic;
+		font-size: 14px;
+		color: #826b60;
+	}
+	.player {
+		margin-top: 15px;
+		margin-bottom: 50px;
+	}
+}
+.song-hd {
+	font-family: $font-oswald;
+	font-weight: 300;
+	color: #241c18;
+}
+
+
+ul.songs {
+	margin: 0;
+	margin-top: 20px;
+	padding: 0;
+	list-style: none;
+	float: left;
+	width: 100%;
+	li {
+		width: 100%;
+		float: left;
+	}
+}
+
+.song-single {
+	width: 100%;
+	font-family: $font-lora;
+	font-style: italic;
+	font-size: 14px;
+	color: #826b60;
+	float: left;
+	div {
+		float: left;
+	}
+	.song-title {
+		width: 50%;
+		a {
+			font-family: $font-lora;
+			font-style: italic;
+			font-size: 14px;
+			color: #826b60;
+		}
+	}
+	.song-dotts {
+		width: 23%;
+		letter-spacing: 3px;
+	}
+	.song-duration {
+		width: 15%;
+		margin-left: 5px;
+	}
+}
+
+
+/* Tour section styles */
+
+.tour-area {
+	padding-top: 40px;
+	background-color: #f1eeed;
+}
+.tour-hd {
+	text-align: center;
+	margin-bottom: 40px;
+	h2 {
+		font-family: $font-oswald;
+		font-weight: 400;
+		font-size: 28px;
+		color: #241c18;
+	}
+}
+
+.tour-dates-box {
+	width: 67%;
+	margin: 0 auto;
+	position: relative;
+	&::before {
+		position: absolute;
+		content: "";
+		height: 2px;
+		width: 100%;
+		background-color: #e4dddb;
+		left: 0;
+		top: 5.5%;
+	}
+}
+
+.owl-stage-outer {
+	overflow: hidden;
+}
+
+.tour-carousel {
+}
+.carousel-box {
+}
+.single-slides {
+	width: 320px;
+}
+.owl-item {
+	height: 320px;
+}
+
+.single-slides, .owl-item {
+	display: inline-block;
+}
+
+.single-tour-box {
+	transform: rotate(-90deg);
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	height: 300px;
+	li {
+		position: relative;
+		width: 80%;
+		text-align: right;
+		margin-bottom: 15px;
+
+		&::before {
+			position: absolute;
+			content: "";
+			height: 10px;
+			width: 10px;
+			border-radius: 10px;
+	    right: -16%;
+	    top: 10px;
+			background-color: #826b60;
+		}
+		a {
+			font-family: $font-lora;
+			font-weight: 700;
+			font-size: 12px;
+			color: #241c18;
+			text-transform: uppercase;
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.owl-nav {
+}
+.owl-next, .owl-prev {
+	position: absolute;
+	top: 40%;
+	cursor: pointer;
+}
+.owl-prev {
+	left: -5%;
+	@include MQ(M) {
+		left: -10%;
+	}
+}
+
+.owl-next {
+	right: -5%;
+	@include MQ(M) {
+		right: -10%;
+	}
+}
+
+.tour-add {
+	position: absolute;
+	top: -1.5%;
+	right: -3%;
+}
+
+.add-tour {
+	font-size: 30px;
+	font-weight: 700;
+	color: #958279;
+	border: none;
+	background: initial;
+	outline: none;
+}
+
+.owl-item {
+	.single-tour-box {
+		li a {
+			color: #e4dddb;
+		}
+		li::before {
+			background-color: #e4dddb;
+		}
+	}
+
+}
+
+.owl-item.active {
+	.single-tour-box {
+		li a {
+			color: #241c18;
+		}
+		li::before {
+			background-color: #826b60;
+		}
+	}
+}
+
+.owl-item.active.center {
+
+}
+
+/* Tickets styles */
+
+.tour-tickets {
+	max-height: 180px;
+	overflow: auto;
+	width: 65%;
+	margin: 0 auto;
+	padding: 0 3%;
+	margin-bottom: 50px;
+	@include MQ(M) {
+		width: 100%;
+	}
+}
+
+.tour-date,
+.tour-location,
+.date-border {
+	display: block;
+	float: left;
+}
+.buy-ticket-btn {
+	float: right;
+}
+
+.tour-ticket-single {
+	width: 100%;
+	float: left;
+	border-bottom: 1px dotted;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	.tour-date {
+		width: 15%;
+		font-family: $font-oswald;
+		font-weight: 700;
+		color: #241c18;
+		line-height: 1.2;
+		.day {
+			float: left;
+			width: 45%;
+			font-size: 39px;
+			margin-right: 8%;
+			@include MQ(M) {
+				font-size: 25px;
+			}
+		}
+		.month-year {
+			float: left;
+			width: 45%;
+			font-size: 18px;
+			span {
+				display: block;
+			}
+		}
+	}
+	.date-border {
+		display: block;
+		height: 25px;
+		width: 3px;
+		background-color: #e4dddb;
+		margin: 5px 10px;
+	}
+	.tour-location {
+		font-family: $font-oswald;
+		font-weight: 300;
+		font-size: 22px;
+		color: #241c18;
+		@include MQ(M) {
+			font-size: 16px;
+		}
+	}
+	.buy-ticket-btn {
+		margin-right: 3%;
+		a {
+			display: block;
+			text-decoration: none;
+			font-size: 14px;
+			font-family: $font-oswald;
+			font-weight: 400;
+			color: #f8f8f8;
+			text-transform: uppercase;
+			padding: 5px 20px;
+			background-color: #826b60;
+			@include MQ(M) {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+/* Contact area styles */
+.contact-area {
+	background: url(../img/contact-bg.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+
+.contact-box {
+	width: 60%;
+	margin: 0 auto;
+	@include MQ(M) {
+		width: 100%;
+	}
+	.contact-hd {
+		text-align: center;
+		padding-top: 50px;
+		border-bottom: 2px dotted #e4dddb;
+		h1 {
+			font-family: $font-oswald;
+			font-weight: 700;
+			font-size: 4.28em;
+			color: #241c18;
+			text-transform: uppercase;
+			@include MQ(M) {
+				font-size: 3.5em;
+			}
+		}
+		.sub {
+			font-size: 3.5em;
+			color: #e4dddb;
+			@include MQ(M) {
+				font-size: 2.5em;
+			}
+		}
+	}
+}
+
+.contact-subscribe-box {
+	text-align: center;
+}
+.contact-subscribe {
+	padding-bottom: 40px;
+	margin: 30px auto;
+	display: inline-block;
+	text-align: initial;
+}
+
+.sbscribe-form {
+	float: left;
+}
+
+.subscribe-box {
+	border: 5px solid #241c18;
+	float: left;
+	min-width: 400px;
+	.subscribe-btn {
+		width: 35%;
+		float: left;
+		input {
+			border: none;
+			background-color: #241c18;
+			font-family: $font-oswald;
+			font-weight: 700;
+			font-size: 2em;
+			color: #e4dddb;
+			text-transform: uppercase;
+			@include MQ(M) {
+				font-size: 1.75em;
+				line-height: 1.6;
+			}
+		}
+	}
+	.subscribe-mail {
+		width: 63%;
+		float: left;
+		input {
+			border: none;
+			width: 100%;
+			height: 40px;
+			background-color: #907b71;
+			font-family: $font-oswald;
+			font-weight: 700;
+			font-size: 2em;
+			color: #e4dddb;
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+
+}
+.contact-social {
+	float: left;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			float: left;
+			margin-left: 20px;
+			a {
+				display: block;
+				height: 47px;
+				width: 27px;
+			}
+			.facebook {
+				background: url(../img/f-icon.png) 0 0 no-repeat;
+			}
+			.youtube {
+				width: 49px;
+				height: 47px;
+				background: url(../img/y-icon.png) 0 0 no-repeat;
+			}
+		}
+	}
+
+	@include MQ(M) {
+		text-align: center;
+		width: 100%;
+		margin-top: 30px;
+		ul {
+			display: inline-block;
+		}
+	}
+}
+
+.footer-area {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	@include MQ(S) {
+		position: initial;
+	}
+}
+
+.f-info {
+	font-family: $font-lora;
+	font-weight: 700;
+	font-size: 1em;
+	color: #e4dddb;
+	text-transform: uppercase;
+	@include MQ(M) {
+		text-align: center;
+	}
+}
+
+.footer-menu {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: inline-block;
+		li {
+			float: left;
+			a {
+				font-family: $font-lora;
+				font-weight: 700;
+				font-size: 1em;
+				color: #e4dddb;
+				text-transform: uppercase;
+				text-decoration: none;
+				padding: 10px 15px;
+			}
+		}
+	}
+}
+
+
